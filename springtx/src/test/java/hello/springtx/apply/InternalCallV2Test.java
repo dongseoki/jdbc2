@@ -47,7 +47,7 @@ public class InternalCallV2Test {
 
 		private final InternalService internalService;
 
-		public void external() {
+		void external() {
 			log.info("call external");
 			printTxInfo();
 			internalService.internal();
@@ -62,7 +62,7 @@ public class InternalCallV2Test {
 	static class InternalService {
 
 		@Transactional
-		public void internal() {
+		void internal() {
 			log.info("call internal");
 			printTxInfo();
 		}
