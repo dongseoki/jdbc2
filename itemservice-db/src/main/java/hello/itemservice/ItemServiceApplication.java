@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
 
 
 @Slf4j
-@Import(JdbcTemplateV3Config.class)
+@Import(MyBatisConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
